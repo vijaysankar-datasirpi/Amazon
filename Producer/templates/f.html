@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+
+    <h2>Add Student</h2>
+    <form method="post" action="/students/Post/">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter Name..." name="name">
+        <input type="number" placeholder="Enter Age..." name="age">
+        <input type="text" placeholder="Your class..." name="std">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
