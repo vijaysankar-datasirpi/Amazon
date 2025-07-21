@@ -34,7 +34,7 @@ def Post(request):
         connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
         channel = connection.channel()
 
-        channel.queue_declare(queue='email_queue', durable=True)
+        channel.queue_declare(queue='Q', durable=True)
 
         channel.basic_publish(
             exchange='',

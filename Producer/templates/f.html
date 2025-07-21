@@ -8,11 +8,11 @@
 <body>
 
     <h2>Add Student</h2>
-    <form method="post" action="/students/Post/">
+    <form method="post" action="/Producer/post">
         {% csrf_token %}
-        <input type="text" placeholder="Enter Name..." name="name">
-        <input type="number" placeholder="Enter Age..." name="age">
-        <input type="text" placeholder="Your class..." name="std">
+        <input type="text" placeholder="Enter Name..." name="Uname">
+        <input type="text" placeholder="Enter Password..." name="Password">
+        <input type=email placeholder="Your Email..." name="Mail">
         <input type="submit" value="Submit">
     </form>
 
